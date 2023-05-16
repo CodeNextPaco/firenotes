@@ -1,0 +1,58 @@
+   /* Custom styles for the sunset color palette */
+   body {
+    height: 100vh; /* Set the height to cover the entire viewport */
+
+    background: linear-gradient(to bottom right, #ffcc00, #ff3300);
+    color: #fff;
+    padding-top: 100px;
+  }
+
+  .jumbotron {
+      
+    background-color: rgb(255 79 79 / 38%);
+    
+    
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+  }
+
+  .btn-primary:hover {
+    background-color: #ff9933;
+    border-color: #ff9933;
+  }
+
+  .btn-secondary {
+    background-color: #00c3ff;
+    border-color: #00c3ff;
+  }
+
+  .btn-secondary:hover {
+    background-color: #015f7c;
+    border-color: #015f7c;
+  }
+
+  .btn-primary:focus,
+  .btn-primary.focus {
+    background-color: #ff9933;
+    border-color: #ff9933;
+    box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.5);
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  a {
+
+    color:aliceblue;
+  }
+
+  .note {
+    margin-bottom: 20px;
+  }
