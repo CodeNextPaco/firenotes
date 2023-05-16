@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Notes App</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    /* Custom styles */
+    .container {
+      max-width: 500px;
+      margin-top: 50px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg text-white fixed-top">
+        <a class="navbar-brand" href="home.html">Firenotes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  <div class="container">
+    <h3>Add a Firenote</h3>
+
+    <form>
+      <div class="form-group">
+        <textarea class="form-control" rows="3" placeholder="Enter a note"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Note</button>
+    </form>
+    <hr>
+    <div class="notes">
+      <div class="note">
+          <h3>My Firenotes</h3>
+        <div class="card">
+
+          <div class="card-body">
+            <p class="card-text">This is a sample note.</p>
+            <button class="btn btn-danger">X</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more notes here -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAi-LxQLCZnZAWZEKtdB7m4pTb_XoGL6ZA",
+      authDomain: "firenotes-e0fc1.firebaseapp.com",
+      projectId: "firenotes-e0fc1",
+      storageBucket: "firenotes-e0fc1.appspot.com",
+      messagingSenderId: "978121631535",
+      appId: "1:978121631535:web:51e77cc9887397ab15a3da",
+      measurementId: "G-QRBG0PD9R9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+<script>
+  import { } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+  import { } from "https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"
+ 
+</script>
+</body>
+
+</html>i
